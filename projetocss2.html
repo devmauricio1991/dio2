@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dio2 flex wrap</title>
+    <style>
+        .flex-container{
+            display: flex;
+            border: 2px solid black;
+            max-width: 300px;
+            flex-direction: column;
+            height: 100px;
+        }
+
+        .item{
+            font-size: 24px;
+            height: 50%;
+            text-align: center;
+            line-height: 50px;
+            min-width: 100px;
+        }
+
+        .nowrap{
+            flex-wrap: nowrap;
+        }
+
+        .wrap{
+            flex-wrap: wrap;
+        }
+
+        .wrapReverse{
+            flex-wrap: wrap-reverse;
+        }
+
+        .blue{
+            background: blue;
+        }
+
+        .green{
+            background: lightgreen;
+        }
+
+        .orange{
+            background: orangered;
+        }
+
+        .yellow{
+            background: yellow;
+        }
+
+        .purple{
+            background: purple;
+        }
+
+        .red{
+            background: rgb(245, 8, 8);
+        }
+
+        .grey{
+            background: rgb(117, 115, 117);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>no wrap</h1>
+
+    <div class="flex-container nowrap" >
+        <div class="item orange">1</div>
+        <div class="item green">2</div>
+        <div class="item blue">3</div>
+        <div class="item yellow">3</div>
+
+    </div>
+
+    <h1>wrap</h1>
+
+    <div class="flex-container wrap" >
+        <div class="item orange">1</div>
+        <div class="item green">2</div>
+        <div class="item blue">3</div>
+    </div>
+
+    <h1>wrap-reverse</h1>
+
+    <div class="flex-container wrapReverse" >
+        <div class="item orange">1</div>
+        <div class="item green">2</div>
+        <div class="item blue">3</div>
+
+    </div>
+
+ 
+
+</body>
+</html>
